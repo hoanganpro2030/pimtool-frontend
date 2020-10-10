@@ -1,0 +1,65 @@
+.lable-top{
+  font-size: 18pt;
+  color: #666666;
+  margin-left: 20px;
+}
+span{
+  font-family: "Segoe UI";
+  font-weight: 500;
+  color: #666666;
+}
+
+label{
+  font-family: "Segoe UI";
+  font-weight: 500;
+  color: #666666;
+  font-size: 14pt;
+}
+.content{
+  padding-left: 40px;
+  background-color: whitesmoke;
+
+}
+.right-side{
+  height: 100vh;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+.label-required:after{
+  content: "*";
+  color: red;
+  padding-left: 20px;
+}
+select{
+  padding-top: 3px;
+  font-size: 11pt;
+}
+.my-form-group{
+  margin-top: 38px;
+}
+.my-form{
+  margin-left: 60px;
+}
+.form-control{
+  height: 30px;
+}
+.my-wrap-form{
+  padding-bottom: 30px;
+  margin-left: 30px;
+}
+
+.btn-cancel{
+  boder-color: #454545;
+  font-weight: bold;
+  height: 35px;
+  background-color: white;
+}
+.btn-create{
+  border-color: #2F85FA;
+  font-weight: bold;
+  height: 35px;
+}
+hr{
+  border-color: #cfcfcf;
+}
+

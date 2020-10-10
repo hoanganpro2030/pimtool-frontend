@@ -1,0 +1,58 @@
+.project-list{
+  background-color: whitesmoke;
+  padding-top: 20px;
+}
+.my-form{
+  padding-top: 20px;
+}
+.lable-top{
+  font-size: 18pt;
+  color: #666666;
+  margin-left: 20px;
+}
+.table{
+  margin-top: 40px;
+  background-color: white;
+  border-collapse: collapse;
+}
+.special{
+  font-weight: 10;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-left: 1px solid #ddd;
+  border-bottom: none;
+  border-top: none;
+}
+
+.table-checkbox{
+  width: 15px;
+  height: 15px;
+  padding-left: 10px;
+}
+.check-col{
+  width: 3%;
+}
+.num-col{
+  width: 8%;
+}
+.name-col{
+  width: 40%;
+}
+.status-col{
+  width: 10%;
+}
+.cus-col{
+  width: 24%;
+}
+.start-col{
+  width: 10%;
+}
+.del-col{
+  width: 5%;
+}
+.fa-trash-alt{
+  color: red;
+}
