@@ -63,3 +63,7 @@ hr{
   border-color: #cfcfcf;
 }
 
+.ng-invalid.ng-touched.form-control{
+  border: red solid 1px;
+  box-shadow: red 0px 0px 4px;
+}

@@ -10,10 +10,12 @@ import { ProjectFormComponent } from './body/content/project-form/project-form.c
 import { ProjectListComponent } from './body/content/project-list/project-list.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ErrorComponent } from './error/error.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 const appRoutes: Routes = [
+  // { path: '', redirectTo: 'project-list', pathMatch: 'full' },
   { path: 'project-list', component: ProjectListComponent },
   { path: 'project-form', component: ProjectFormComponent},
-  { path: '',   redirectTo: 'project-list', pathMatch: 'full' }
+  
 ]
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,14 +5,14 @@
 
   <div class="col-9 row">
     <div class="col-sm-12 my-wrap-form ">
-      <form action="" class="my-form">
+      <form [formGroup]='projectForm' (ngSubmit)='onSubmit()' class="my-form">
         <hr>
         <div class="row my-form-group">
           <div class="col-sm-3">
             <label class="label-required">Project number</label>
           </div>
           <div class="col-sm-3">
-            <input class="form-control">
+            <input class="form-control" formControlName="projectNumber">
           </div>
         </div>
 
@@ -21,7 +21,7 @@
             <label class="label-required">Project name</label>
           </div>
           <div class="col-sm-9">
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="projectName">
           </div>
         </div>
 
@@ -30,7 +30,7 @@
             <label class="label-required">Customer</label>
           </div>
           <div class="col-sm-9">
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="customer">
           </div>
         </div>
 
@@ -39,7 +39,7 @@
             <label class="label-required">Group</label>
           </div>
           <div class="col-sm-3">
-            <select name="group" class="form-control">
+            <select name="group" class="form-control" formControlName="group">
               <option value="new">New</option>
             </select>
           </div>
@@ -50,7 +50,7 @@
             <label >Members</label>
           </div>
           <div class="col-sm-9">
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="members">
           </div>
         </div>
 
@@ -59,7 +59,7 @@
             <label class="label-required">Status</label>
           </div>
           <div class="col-sm-3">
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName="status">
           </div>
         </div>
 
@@ -68,22 +68,24 @@
             <label class="label-required">Start date</label>
           </div>
           <div class="col-sm-3">
-            <input type="date" class="form-control" placeholder="col-form-label">
+            <input type="date" class="form-control" formControlName="startDay">
           </div>
           <div class="col-sm-3">
             <label>End date</label>
           </div>
           <div class="col-sm-3">
-            <input type="date" class="form-control" placeholder="col-form-label">
+            <input type="date" class="form-control" formControlName="endDay">
           </div>
         </div>
         <hr>
         <div class="row my-form-group">
           <div class="col-sm-3 offset-6">
-            <button class="col-sm-12 btn btn-light btn-cancel">Cancel</button>
+            <a class="col-sm-12 btn btn-light btn-cancel">Cancel</a>
           </div>
           <div class="col-sm-3">
-            <button class="col-sm-12 btn btn-primary btn-create">Create Project</button>
+            <button class="col-sm-12 btn btn-primary btn-create" type="submit" [disabled]
+            
+            ="projectForm.invalid">Create Project</button>
           </div>
         </div>
 
